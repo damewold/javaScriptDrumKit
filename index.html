@@ -46,6 +46,7 @@
       <span class="sound">tink</span>
     </div>
   </div>
+<div class='ImageBox'></div>
 
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
@@ -85,6 +86,7 @@ const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playMusic);
   
+  
   window.addEventListener('keydown', event => {
   switch (event.keyCode) {
       case 65: // 1
@@ -114,7 +116,7 @@ const keys = Array.from(document.querySelectorAll('.key'));
         setBackgroundColor('orange');
   }
 });
-
+//every time a key is pressed show the corrosponding backgroun color
 function setBackgroundColor(color){
     document.querySelector('body').style.backgroundColor = color;
 }
