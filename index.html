@@ -86,7 +86,7 @@ const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playMusic);
   
-  
+
   window.addEventListener('keydown', event => {
   switch (event.keyCode) {
       case 65: // 1
@@ -111,9 +111,10 @@ const keys = Array.from(document.querySelectorAll('.key'));
         setBackgroundColor('purple');
         break;
       case 75: // 8
-        setBackgroundColor('blue');
-        case 76: // 8
         setBackgroundColor('orange');
+        break;
+        case 76: // 8
+        setBackgroundColor('cyan');
   }
 });
 //every time a key is pressed show the corrosponding backgroun color
