@@ -2,4 +2,4 @@
 
 - made using plain javascript, html and css
 
-<img src=''/>
+<img src='color.gif'/>
